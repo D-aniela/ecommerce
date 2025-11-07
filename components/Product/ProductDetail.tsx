@@ -2,6 +2,7 @@ import Image from 'next/image'
 import IconButton from '../Buttons/Icon'
 import ColorsBtn from '../Buttons/Colors'
 import SizesBtn from '../Buttons/Sizes'
+import AddToCartBtn from '../Buttons/AddToCart'
 
 export default function ProductDetail() {
   return (
@@ -34,10 +35,9 @@ export default function ProductDetail() {
           <div>
             <ColorsBtn colors={['000000', 'ffffff', 'FF2A00']} />
           </div>
-          <div>
-            <p className='mt-5 text-sm'>Selecciona una medida</p>
-            <SizesBtn />
-          </div>
+          <p className='mt-5 text-sm'>Selecciona una medida</p>
+          <SizesBtn />
+          <AddToCartBtn />
         </div>
       </div>
     </section>
