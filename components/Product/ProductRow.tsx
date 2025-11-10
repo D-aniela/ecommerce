@@ -4,8 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 
 export default function ProductRow({
-  imageSrc = '/images/cosy-luxe-hoodie.jpg',
-  badge = 'OUR SOFTEST YET',
+  imageSrc = 'https://images.unsplash.com/photo-1542291026-7eec264c27ff',
   title = 'Cosy Luxe Straight Leg Joggers',
   subtitle = 'Rich Maroon - L - Oversized Fit',
   price = '£48',
@@ -32,13 +31,6 @@ export default function ProductRow({
             className='object-cover object-center'
             // remove priority in production if many images
           />
-
-          {/* Badge positioned over image */}
-          {badge && (
-            <div className='absolute left-1 bottom-1 bg-white text-xs font-semibold px-2 py-1 rounded shadow text-gray-800'>
-              {badge}
-            </div>
-          )}
         </div>
 
         {/* Main content: title + subtitle */}
